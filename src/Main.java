@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String login = "java_skypro_go"; // Логин
+        String login = "java_skнpro_go"; // Логин
         String password = "D_1hWikjjP_9"; // Пароль
         String confirmPassword = "D_1hWikjjP_9"; // Повтор пароля
 
@@ -24,6 +24,8 @@ public class Main {
         } finally {
             if (isLoginValid && isPasswordValid) {
                 System.out.println("Проверка завершена.");
+            } else {
+                System.out.println("Повторите ввод.");
             }
 
         }
