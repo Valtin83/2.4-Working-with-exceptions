@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String login = "java_skypro_go"; // Логин
+        String login = "java_skнpro_go"; // Логин
         String password = "D_1hWikjjP_9"; // Пароль
         String confirmPassword = "D_1hWikjjP_9"; // Повтор пароля
 
@@ -25,8 +25,11 @@ public class Main {
             System.out.println(e.getMessage());
             isPasswordValid = false;
         }
-        if (isLoginValid && isPasswordValid) {
-            System.out.println("Проверка завершена.");
+        finally {
+            if (isLoginValid && isPasswordValid) {
+                System.out.println("Проверка завершена.");
+        }
+
         }
 
     }
