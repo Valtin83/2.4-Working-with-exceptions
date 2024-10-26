@@ -21,7 +21,8 @@ public class Main {
         } catch (WrongPasswordException e) {
             System.out.println(e.getMessage());
             isPasswordValid = false;
-        } finally {
+        }
+        finally {
             if (isLoginValid && isPasswordValid) {
                 System.out.println("Проверка завершена.");
             } else {
